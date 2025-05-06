@@ -12,6 +12,9 @@ import os
 TOKEN = os.getenv("DISCORD_TOKEN")  # ← scrie manual, fără copy-paste
 CHANNEL_ID = 1367395360959500288    # ← înlocuiește cu ID-ul canalului #stiri-bursiere
 
+print("DEBUG TOKEN:", TOKEN)
+print("DEBUG CHANNEL:", CHANNEL_ID)
+
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
