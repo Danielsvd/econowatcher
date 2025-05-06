@@ -7,9 +7,7 @@ import json
 import os
 from discord import app_commands
 
-import os
-
-TOKEN = os.getenv("DISCORD_TOKEN")"  # ← pune aici tokenul real
+TOKEN = os.getenv("DISCORD_TOKEN")  # ← scrie manual, fără copy-paste
 CHANNEL_ID = int(os.getenv("DISCORD_CHANNEL_ID"))    # ← înlocuiește cu ID-ul canalului #stiri-bursiere
 
 intents = discord.Intents.default()
