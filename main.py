@@ -733,5 +733,14 @@ async def fetch_news():
                         if trimise == 0:
                             await channel.send(f"*Nu s-au găsit știri noi în ultima oră ({datetime.datetime.now().strftime('%H:%M')}).*")
 
+import threading
+from server import app
 
+def run():
+    app.run(host="0.0.0.0", port=3000)
+
+# Pornește serverul Flask pe un thread separat
+threading.Thread(target=run).start()
+
+# Apoi pornește botul (blocant)
 bot.run(TOKEN)
