@@ -8,7 +8,7 @@ import os
 from discord import app_commands
 
 TOKEN = os.getenv("DISCORD_TOKEN")  # ← scrie manual, fără copy-paste
-CHANNEL_ID = i1367395360959500288    # ← înlocuiește cu ID-ul canalului #stiri-bursiere
+CHANNEL_ID = 1367395360959500288    # ← înlocuiește cu ID-ul canalului #stiri-bursiere
 
 intents = discord.Intents.default()
 intents.message_content = True
