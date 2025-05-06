@@ -7,6 +7,8 @@ import json
 import os
 from discord import app_commands
 
+import os
+
 TOKEN = os.getenv("DISCORD_TOKEN")  # ← scrie manual, fără copy-paste
 CHANNEL_ID = 1367395360959500288    # ← înlocuiește cu ID-ul canalului #stiri-bursiere
 
