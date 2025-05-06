@@ -748,4 +748,7 @@ def run():
 threading.Thread(target=run).start()
 
 # Apoi pornește botul (blocant)
-bot.run(TOKEN)
+try:
+    bot.run(TOKEN)
+except Exception as e:
+    print(f"[EROARE BOT] {e}")
